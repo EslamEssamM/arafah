@@ -44,7 +44,7 @@ function playChime(type) {
 
 // App State
 const state = {
-  currentCategory: 'intro',
+  currentCategory: localStorage.getItem('arafah_active_category') || 'intro',
   checkedPrayers: JSON.parse(localStorage.getItem('arafah_checked_prayers')) || {},
   theme: localStorage.getItem('arafah_theme') || 'light',
   dhikr: {
@@ -135,6 +135,7 @@ function renderMenus() {
 // Switch Active Category
 function switchCategory(key) {
   state.currentCategory = key;
+  localStorage.setItem('arafah_active_category', key);
   
   // Highlight active items
   document.querySelectorAll('.nav-item').forEach(item => {
