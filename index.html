@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>حقيبة أدعية يوم عرفة المبارك - تفاعلية</title>
+  <meta name="description" content="تطبيق تفاعلي يضم أدعية يوم عرفة المأثورة والقرآنية مع إمكانية تتبع قراءتها بيسر وسهولة.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar for Desktop -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <!-- Premium Islamic Mosque Dome/Crescent SVG Logo -->
+        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <circle cx="50" cy="50" r="41" fill="none" stroke="currentColor" stroke-width="1"/>
+          <path d="M50,15 C50,15 48,22 42,28 C36,34 32,45 32,58 C32,72 40,78 50,78 C60,78 68,72 68,58 C68,45 64,34 58,28 C52,22 50,15 50,15 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="50" y1="10" x2="50" y2="15" stroke="currentColor" stroke-width="2"/>
+          <path d="M50,38 C56,38 60,42 60,48 C60,54 55,58 49,58 C46,58 43,57 41,55 C45,54 47,50 47,46 C47,42 45,39 42,38 C44,38 47,38 50,38 Z" fill="currentColor"/>
+          <path d="M25,78 L75,78 L70,83 L30,83 Z" fill="currentColor"/>
+        </svg>
+        <h1>يوم عرفة</h1>
+        <p>موسوعة الأدعية والأذكار التفاعلية</p>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="sidebarMenu">
+        <!-- Rendered dynamically by app.js -->
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <button class="btn-theme" id="themeToggleBtn">
+          <span id="themeToggleIcon">🌙</span>
+          <span id="themeToggleText">الوضع الليلي</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Mobile Native-style Header -->
+      <header class="mobile-header">
+        <div class="mobile-logo-info">
+          <!-- Premium Islamic Mosque Dome/Crescent SVG Logo for Mobile -->
+          <svg class="mobile-logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,15 C50,15 48,22 42,28 C36,34 32,45 32,58 C32,72 40,78 50,78 C60,78 68,72 68,58 C68,45 64,34 58,28 C52,22 50,15 50,15 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M50,38 C56,38 60,42 60,48 C60,54 55,58 49,58 C46,58 43,57 41,55 C45,54 47,50 47,46 C47,42 45,39 42,38 C44,38 47,38 50,38 Z" fill="currentColor"/>
+          </svg>
+          <div class="mobile-logo-text">
+            <h2>يوم عرفة</h2>
+            <p>٩ ذو الحجة ١٤٤٧هـ</p>
+          </div>
+        </div>
+        <button class="btn-theme-circle" id="themeToggleBtnMobile" title="تبديل المظهر">🌙</button>
+      </header>
+
+      <!-- Sticky Category Bar (Pills Navigation) for Mobile/Tablet -->
+      <div class="mobile-nav-sticky-wrapper">
+        <nav class="mobile-category-bar" id="mobileCategoryBar">
+          <!-- Populated dynamically by app.js -->
+        </nav>
+      </div>
+
+      <!-- Interactive Dhikr Counter Section -->
+      <section class="dhikr-widget">
+        <div class="dhikr-info">
+          <h2 class="dhikr-heading">الباقيات الصالحات والافتتاح</h2>
+          <p class="dhikr-text" id="dhikrPrompt">سبّح الله عشرًا، واحمد الله عشرًا، وكبّر الله عشرًا قبل بدء دعائك.</p>
+        </div>
+        <div class="dhikr-counter-section">
+          <div class="dhikr-circle" id="dhikrClicker">
+            <span class="dhikr-count" id="dhikrCount">0</span>
+            <span class="dhikr-label" id="dhikrLabel">سُبْحَانَ الله</span>
+          </div>
+          <button class="dhikr-reset-btn" id="dhikrResetBtn">إعادة</button>
+        </div>
+      </section>
+
+      <!-- Category Header Title -->
+      <section class="category-header">
+        <span class="nav-icon" id="currentCategoryIcon">🕌</span>
+        <h2 class="category-title" id="currentCategoryTitle">مقدمة وآداب الدعاء</h2>
+      </section>
+
+      <!-- Prayers List Container -->
+      <div class="prayers-list" id="prayersListContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <p>حقيبة أدعية يوم عرفة التفاعلية © ١٤٤٧ هـ - ٢٠٢٦ م</p>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- Load Data and Logic -->
+  <script src="prayers-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
