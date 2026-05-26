@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arafah.vercel.app/sitemap.xml

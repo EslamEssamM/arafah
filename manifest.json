@@ -1,0 +1,18 @@
+{
+  "name": "حقيبة أدعية يوم عرفة المبارك",
+  "short_name": "أدعية عرفة",
+  "description": "تطبيق تفاعلي يضم أدعية يوم عرفة المأثورة والقرآنية مع إمكانية تتبع قراءتها بيسر وسهولة.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF6ED",
+  "theme_color": "#C5A880",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
